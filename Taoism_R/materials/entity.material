@@ -1,9 +1,0 @@
-{
-	"materials":{
-		"version":"1.0.0",
-		"base:entity_emissive_alpha":{},
-		"baseb:entity_emissive_alpha":{
-			"+defines":["USE_ONLY_EMISSIVE"]
-		}
-	}
-}
