@@ -1,0 +1,46 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "items:talisman_t"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      " a ",
+      "ced",
+      " b "
+    ],
+    "key": {
+      "a": {
+        "item": "items:brush_p"
+      },
+      "b": {
+        "item": "paper"
+      },
+      "c": {
+        "item": "items:tc"
+      },
+      "d": {
+        "item": "items:fish_gelatin"
+      },
+      "e": {
+        "item": "items:spe"
+      }
+    },
+    "unlock": [
+      {
+        "item": "items:talisman"
+      }
+    ],
+    "result": [{
+      "item": "items:talisman_t",
+      "count": 4
+    },
+    {
+      "item": "items:brush_n",
+      "count": 1
+    }]
+  }
+}

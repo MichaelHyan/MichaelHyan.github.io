@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "items:tb",
+      "category": "Nature"
+    },
+
+    "components": {
+      "minecraft:icon": "tb",
+      "minecraft:render_offsets": "tb"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "ny:cabbage",
+      "category": "Nature"
+    },
+
+    "components": {
+      "minecraft:icon": "cabbage",
+      "minecraft:render_offsets": "cabbage"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "ny:dumpling_e",
+      "category": "Nature"
+    },
+
+    "components": {
+      "minecraft:icon": "dumpling_b",
+      "minecraft:render_offsets": "dumpling_b"
+    }
+  }
+}

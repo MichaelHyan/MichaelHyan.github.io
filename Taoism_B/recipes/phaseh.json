@@ -1,0 +1,39 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "items:phaseh"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "ccc",
+      "aba",
+      "ddd"
+    ],
+    "key": {
+      "a": {
+        "item": "stick"
+      },
+      "b": {
+        "item": "copper_ingot"
+      },
+      "c": {
+        "item": "pale_osk_log"
+      },
+      "d": {
+        "item": "pale_osk_slab"
+      }
+    },
+    "unlock": [
+      {
+        "item": "items:cinnabar_crystal"
+      }
+    ],
+    "result": {
+      "item": "items:phase",
+      "count": 1
+    }
+  }
+}

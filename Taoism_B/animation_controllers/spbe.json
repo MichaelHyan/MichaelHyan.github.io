@@ -1,0 +1,53 @@
+{
+	"format_version": "1.8.0",
+	"animation_controllers": {
+		"controller.animation.spbe":{
+			"states":{
+				"base_jeta":{
+					"transitions":[
+						{"spbe_a":"query.life_time <= 1"},
+						{"spbe_b":"query.life_time == 1.2"},
+						{"spbe_c":"query.life_time > 1.2"}
+					]
+				},
+				"spbe_a": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/particle minecraft:falling_dust_sand_particle ~ ~ ~",
+						"/damage @e[tag=spbd,tag=!spbe,r=2] 15",
+						"/tag @e[type=!player,type=!item,family=!taoism,r=2] add spbe",
+						"/effect @e[tag=spbe,r=2] slowness 60 1",
+						"/tag @e[r=2] remove spbd"
+					]
+				},
+				"spbe_b": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/particle minecraft:large_explosion",
+						"/effect @s invisibility 1 1 true",
+						"/kill @s"
+					]
+				},
+				"spbe_c": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/effect @s invisibility 1 1 true",
+						"/kill @s"
+					]
+				}
+			}
+		}
+ 	}
+ }

@@ -1,0 +1,39 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "items:sword_b"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "dad",
+      "dbd",
+      "dcd"
+    ],
+    "key": {
+      "a": {
+        "item": "items:cinnabar_powder"
+      },
+      "b": {
+        "item": "golden_sword"
+      },
+      "c": {
+        "item": "items:qi"
+      },
+      "d": {
+        "item": "items:spe"
+      }
+    },
+    "unlock": [
+      {
+        "item": "items:pearl"
+      }
+    ],
+    "result": {
+      "item": "items:sword_b",
+      "count": 1
+    }
+  }
+}

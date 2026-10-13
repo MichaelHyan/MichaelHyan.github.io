@@ -1,0 +1,43 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "items:soul_banner"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "cac",
+      "ebe",
+      "ddd"
+    ],
+    "key": {
+      "a": {
+        "item": "items:sword_sp"
+      },
+      "b": {
+        "item": "minecraft:banner",
+        "data": 0
+      },
+      "c": {
+        "item": "items:qi"
+      },
+      "d": {
+        "item": "items:spirit"
+      },
+      "e": {
+        "item": "items:talisman"
+      }
+    },
+    "unlock": [
+      {
+        "item": "items:pearl"
+      }
+    ],
+    "result": {
+      "item": "items:soul_banner",
+      "count": 1
+    }
+  }
+}

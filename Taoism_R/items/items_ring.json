@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "items:ring",
+      "category": "Nature"
+    },
+
+    "components": {
+      "minecraft:icon": "ring",
+      "minecraft:render_offsets": "ring"
+    }
+  }
+}

@@ -1,0 +1,1107 @@
+{
+	"format_version": "1.8.0",
+	"animation_controllers": {
+		"controller.animation.construction":{
+			"states":{
+				"base_jeta":{
+					"transitions":[
+						{"constructor_target":"query.get_equipped_item_name=='constructor_target' && query.is_using_item && query.scoreboard('swordatkcd') >= 0"},
+						{"constructor_flat":"query.get_equipped_item_name=='constructor_flat' && query.is_using_item && query.scoreboard('swordatkcd') >= 0"},
+						{"constructor_vertical":"query.get_equipped_item_name=='constructor_vertical' && query.is_using_item && query.scoreboard('swordatkcd') >= 0"},
+						{"constructor_remove":"query.get_equipped_item_name=='constructor_target' || query.get_equipped_item_name=='constructor_flat' || query.get_equipped_item_name=='constructor_vertical' && variable.attack_time && query.scoreboard('swordatkcd') >= 0"},
+						{"constructor_rotate":"query.get_equipped_item_name=='constructor_rotate' && variable.attack_time && query.scoreboard('swordatkcd') >= 0"},
+						{"constructor_filler_remove":"query.is_item_name_any('slot.weapon.offhand', 0, 'construction:constructor_filler') && query.is_item_equipped == 0 && variable.attack_time"},
+						{"constructor_filler_wall_cobblestone":"query.is_item_name_any('slot.weapon.offhand', 0, 'construction:constructor_filler') && query.get_equipped_item_name=='cobblestone_wall' && variable.attack_time"},
+						{"constructor_filler_wall_mossy_cobblestone":"query.is_item_name_any('slot.weapon.offhand', 0, 'construction:constructor_filler') && query.get_equipped_item_name=='mossy_cobblestone_wall' && variable.attack_time"},
+						{"constructor_filler_wall_granite":"query.is_item_name_any('slot.weapon.offhand', 0, 'construction:constructor_filler') && query.get_equipped_item_name=='granite_wall' && variable.attack_time"},
+						{"constructor_filler_wall_diorite":"query.is_item_name_any('slot.weapon.offhand', 0, 'construction:constructor_filler') && query.get_equipped_item_name=='diorite_wall' && variable.attack_time"},
+						{"constructor_filler_wall_andesite":"query.is_item_name_any('slot.weapon.offhand', 0, 'construction:constructor_filler') && query.get_equipped_item_name=='andesite_wall' && variable.attack_time"},
+						{"constructor_filler_wall_sandstone":"query.is_item_name_any('slot.weapon.offhand', 0, 'construction:constructor_filler') && query.get_equipped_item_name=='sandstone_wall' && variable.attack_time"},
+						{"constructor_filler_wall_red_sandstone":"query.is_item_name_any('slot.weapon.offhand', 0, 'construction:constructor_filler') && query.get_equipped_item_name=='red_sandstone_wall' && variable.attack_time"},
+						{"constructor_filler_wall_stone_brick":"query.is_item_name_any('slot.weapon.offhand', 0, 'construction:constructor_filler') && query.get_equipped_item_name=='stone_brick_wall' && variable.attack_time"},
+						{"constructor_filler_wall_mossy_stone_brick":"query.is_item_name_any('slot.weapon.offhand', 0, 'construction:constructor_filler') && query.get_equipped_item_name=='mossy_stone_brick_wall' && variable.attack_time"},
+						{"constructor_filler_wall_cobbled_deepslate":"query.is_item_name_any('slot.weapon.offhand', 0, 'construction:constructor_filler') && query.get_equipped_item_name=='cobbled_deepslate_wall' && variable.attack_time"},
+						{"constructor_filler_wall_polished_deepslate":"query.is_item_name_any('slot.weapon.offhand', 0, 'construction:constructor_filler') && query.get_equipped_item_name=='polished_deepslate_wall' && variable.attack_time"},
+						{"constructor_filler_wall_deepslate_brick":"query.is_item_name_any('slot.weapon.offhand', 0, 'construction:constructor_filler') && query.get_equipped_item_name=='deepslate_brick_wall' && variable.attack_time"},
+						{"constructor_filler_wall_brick":"query.is_item_name_any('slot.weapon.offhand', 0, 'construction:constructor_filler') && query.get_equipped_item_name=='brick_wall' && variable.attack_time"},
+						{"constructor_filler_cobblestone":"query.is_item_name_any('slot.weapon.offhand', 0, 'construction:constructor_filler') && query.get_equipped_item_name=='cobblestone' && variable.attack_time"},
+						{"constructor_filler_mossy_cobblestone":"query.is_item_name_any('slot.weapon.offhand', 0, 'construction:constructor_filler') && query.get_equipped_item_name=='mossy_cobblestone' && variable.attack_time"},
+						{"constructor_filler_granite":"query.is_item_name_any('slot.weapon.offhand', 0, 'construction:constructor_filler') && query.get_equipped_item_name=='granite' && variable.attack_time"},
+						{"constructor_filler_diorite":"query.is_item_name_any('slot.weapon.offhand', 0, 'construction:constructor_filler') && query.get_equipped_item_name=='diorite' && variable.attack_time"},
+						{"constructor_filler_andesite":"query.is_item_name_any('slot.weapon.offhand', 0, 'construction:constructor_filler') && query.get_equipped_item_name=='andesite' && variable.attack_time"},
+						{"constructor_filler_sandstone":"query.is_item_name_any('slot.weapon.offhand', 0, 'construction:constructor_filler') && query.get_equipped_item_name=='sandstone' && variable.attack_time"},
+						{"constructor_filler_red_sandstone":"query.is_item_name_any('slot.weapon.offhand', 0, 'construction:constructor_filler') && query.get_equipped_item_name=='red_sandstone' && variable.attack_time"},
+						{"constructor_filler_stone_brick":"query.is_item_name_any('slot.weapon.offhand', 0, 'construction:constructor_filler') && query.get_equipped_item_name=='stone_bricks' && variable.attack_time"},
+						{"constructor_filler_mossy_stone_brick":"query.is_item_name_any('slot.weapon.offhand', 0, 'construction:constructor_filler') && query.get_equipped_item_name=='mossy_stone_bricks' && variable.attack_time"},
+						{"constructor_filler_cobbled_deepslate":"query.is_item_name_any('slot.weapon.offhand', 0, 'construction:constructor_filler') && query.get_equipped_item_name=='cobbled_deepslate' && variable.attack_time"},
+						{"constructor_filler_polished_deepslate":"query.is_item_name_any('slot.weapon.offhand', 0, 'construction:constructor_filler') && query.get_equipped_item_name=='polished_deepslate' && variable.attack_time"},
+						{"constructor_filler_deepslate_brick":"query.is_item_name_any('slot.weapon.offhand', 0, 'construction:constructor_filler') && query.get_equipped_item_name=='deepslate_bricks' && variable.attack_time"},
+						{"constructor_filler_brick_block":"query.is_item_name_any('slot.weapon.offhand', 0, 'construction:constructor_filler') && query.get_equipped_item_name=='brick_block' && variable.attack_time"},
+						{"constructor_filler_stone":"query.is_item_name_any('slot.weapon.offhand', 0, 'construction:constructor_filler') && query.get_equipped_item_name=='stone' && variable.attack_time"},
+						{"constructor_filler_sand":"query.is_item_name_any('slot.weapon.offhand', 0, 'construction:constructor_filler') && query.get_equipped_item_name=='sand' && variable.attack_time"},
+						{"constructor_filler_gravel":"query.is_item_name_any('slot.weapon.offhand', 0, 'construction:constructor_filler') && query.get_equipped_item_name=='gravel' && variable.attack_time"},
+						{"constructor_filler_scaffolding":"query.is_item_name_any('slot.weapon.offhand', 0, 'construction:constructor_filler') && query.get_equipped_item_name=='scaffolding' && variable.attack_time"},
+						{"unit_a_preview":"query.get_equipped_item_name=='construction_unit_a' && !query.is_using_item"},
+						{"unit_a_north":"query.get_equipped_item_name=='construction_unit_a' && query.is_using_item && query.scoreboard('direction') == 1 && query.scoreboard('swordatkcd') >= 0"},
+						{"unit_a_south":"query.get_equipped_item_name=='construction_unit_a' && query.is_using_item && query.scoreboard('direction') == 2 && query.scoreboard('swordatkcd') >= 0"},
+						{"unit_a_east":"query.get_equipped_item_name=='construction_unit_a' && query.is_using_item && query.scoreboard('direction') == 3 && query.scoreboard('swordatkcd') >= 0"},
+						{"unit_a_west":"query.get_equipped_item_name=='construction_unit_a' && query.is_using_item && query.scoreboard('direction') == 4 && query.scoreboard('swordatkcd') >= 0"},
+						{"unit_b_preview":"query.get_equipped_item_name=='construction_unit_b' && !query.is_using_item"},
+						{"unit_b_north":"query.get_equipped_item_name=='construction_unit_b' && query.is_using_item && query.scoreboard('direction') == 1 && query.scoreboard('swordatkcd') >= 0"},
+						{"unit_b_south":"query.get_equipped_item_name=='construction_unit_b' && query.is_using_item && query.scoreboard('direction') == 2 && query.scoreboard('swordatkcd') >= 0"},
+						{"unit_b_east":"query.get_equipped_item_name=='construction_unit_b' && query.is_using_item && query.scoreboard('direction') == 3 && query.scoreboard('swordatkcd') >= 0"},
+						{"unit_b_west":"query.get_equipped_item_name=='construction_unit_b' && query.is_using_item && query.scoreboard('direction') == 4 && query.scoreboard('swordatkcd') >= 0"},
+						{"unit_c_preview":"query.get_equipped_item_name=='construction_unit_c' && !query.is_using_item"},
+						{"unit_c_north":"query.get_equipped_item_name=='construction_unit_c' && query.is_using_item && query.scoreboard('direction') == 1 && query.scoreboard('swordatkcd') >= 0"},
+						{"unit_c_south":"query.get_equipped_item_name=='construction_unit_c' && query.is_using_item && query.scoreboard('direction') == 2 && query.scoreboard('swordatkcd') >= 0"},
+						{"unit_c_east":"query.get_equipped_item_name=='construction_unit_c' && query.is_using_item && query.scoreboard('direction') == 3 && query.scoreboard('swordatkcd') >= 0"},
+						{"unit_c_west":"query.get_equipped_item_name=='construction_unit_c' && query.is_using_item && query.scoreboard('direction') == 4 && query.scoreboard('swordatkcd') >= 0"},
+						{"unit_d_preview":"query.get_equipped_item_name=='construction_unit_d' && !query.is_using_item"},
+						{"unit_d_north":"query.get_equipped_item_name=='construction_unit_d' && query.is_using_item && query.scoreboard('direction') == 1 && query.scoreboard('swordatkcd') >= 0"},
+						{"unit_d_south":"query.get_equipped_item_name=='construction_unit_d' && query.is_using_item && query.scoreboard('direction') == 2 && query.scoreboard('swordatkcd') >= 0"},
+						{"unit_d_east":"query.get_equipped_item_name=='construction_unit_d' && query.is_using_item && query.scoreboard('direction') == 3 && query.scoreboard('swordatkcd') >= 0"},
+						{"unit_d_west":"query.get_equipped_item_name=='construction_unit_d' && query.is_using_item && query.scoreboard('direction') == 4 && query.scoreboard('swordatkcd') >= 0"},
+						{"unit_e_preview":"query.get_equipped_item_name=='construction_unit_e' && !query.is_using_item"},
+						{"unit_e_north":"query.get_equipped_item_name=='construction_unit_e' && query.is_using_item && query.scoreboard('direction') == 1 && query.scoreboard('swordatkcd') >= 0"},
+						{"unit_e_south":"query.get_equipped_item_name=='construction_unit_e' && query.is_using_item && query.scoreboard('direction') == 2 && query.scoreboard('swordatkcd') >= 0"},
+						{"unit_e_east":"query.get_equipped_item_name=='construction_unit_e' && query.is_using_item && query.scoreboard('direction') == 3 && query.scoreboard('swordatkcd') >= 0"},
+						{"unit_e_west":"query.get_equipped_item_name=='construction_unit_e' && query.is_using_item && query.scoreboard('direction') == 4 && query.scoreboard('swordatkcd') >= 0"},
+						{"unit_f_preview":"query.get_equipped_item_name=='construction_unit_f' && !query.is_using_item"},
+						{"unit_f_north":"query.get_equipped_item_name=='construction_unit_f' && query.is_using_item && query.scoreboard('direction') == 1 && query.scoreboard('swordatkcd') >= 0"},
+						{"unit_f_south":"query.get_equipped_item_name=='construction_unit_f' && query.is_using_item && query.scoreboard('direction') == 2 && query.scoreboard('swordatkcd') >= 0"},
+						{"unit_f_east":"query.get_equipped_item_name=='construction_unit_f' && query.is_using_item && query.scoreboard('direction') == 3 && query.scoreboard('swordatkcd') >= 0"},
+						{"unit_f_west":"query.get_equipped_item_name=='construction_unit_f' && query.is_using_item && query.scoreboard('direction') == 4 && query.scoreboard('swordatkcd') >= 0"},
+						{"unit_g_preview":"query.get_equipped_item_name=='construction_unit_g' && !query.is_using_item"},
+						{"unit_g_north":"query.get_equipped_item_name=='construction_unit_g' && query.is_using_item && query.scoreboard('direction') == 1 && query.scoreboard('swordatkcd') >= 0"},
+						{"unit_g_south":"query.get_equipped_item_name=='construction_unit_g' && query.is_using_item && query.scoreboard('direction') == 2 && query.scoreboard('swordatkcd') >= 0"},
+						{"unit_g_east":"query.get_equipped_item_name=='construction_unit_g' && query.is_using_item && query.scoreboard('direction') == 3 && query.scoreboard('swordatkcd') >= 0"},
+						{"unit_g_west":"query.get_equipped_item_name=='construction_unit_g' && query.is_using_item && query.scoreboard('direction') == 4 && query.scoreboard('swordatkcd') >= 0"},
+						{"unit_h_preview":"query.get_equipped_item_name=='construction_unit_h' && !query.is_using_item"},
+						{"unit_h_north":"query.get_equipped_item_name=='construction_unit_h' && query.is_using_item && query.scoreboard('direction') == 1 && query.scoreboard('swordatkcd') >= 0"},
+						{"unit_h_south":"query.get_equipped_item_name=='construction_unit_h' && query.is_using_item && query.scoreboard('direction') == 2 && query.scoreboard('swordatkcd') >= 0"},
+						{"unit_h_east":"query.get_equipped_item_name=='construction_unit_h' && query.is_using_item && query.scoreboard('direction') == 3 && query.scoreboard('swordatkcd') >= 0"},
+						{"unit_h_west":"query.get_equipped_item_name=='construction_unit_h' && query.is_using_item && query.scoreboard('direction') == 4 && query.scoreboard('swordatkcd') >= 0"},
+						{"unit_i_preview":"query.get_equipped_item_name=='construction_unit_i' && !query.is_using_item"},
+						{"unit_i_north":"query.get_equipped_item_name=='construction_unit_i' && query.is_using_item && query.scoreboard('direction') == 1 && query.scoreboard('swordatkcd') >= 0"},
+						{"unit_i_south":"query.get_equipped_item_name=='construction_unit_i' && query.is_using_item && query.scoreboard('direction') == 2 && query.scoreboard('swordatkcd') >= 0"},
+						{"unit_i_east":"query.get_equipped_item_name=='construction_unit_i' && query.is_using_item && query.scoreboard('direction') == 3 && query.scoreboard('swordatkcd') >= 0"},
+						{"unit_i_west":"query.get_equipped_item_name=='construction_unit_i' && query.is_using_item && query.scoreboard('direction') == 4 && query.scoreboard('swordatkcd') >= 0"},
+						{"unit_j_preview":"query.get_equipped_item_name=='construction_unit_j' && !query.is_using_item"},
+						{"unit_j_north":"query.get_equipped_item_name=='construction_unit_j' && query.is_using_item && query.scoreboard('direction') == 1 && query.scoreboard('swordatkcd') >= 0"},
+						{"unit_j_south":"query.get_equipped_item_name=='construction_unit_j' && query.is_using_item && query.scoreboard('direction') == 2 && query.scoreboard('swordatkcd') >= 0"},
+						{"unit_j_east":"query.get_equipped_item_name=='construction_unit_j' && query.is_using_item && query.scoreboard('direction') == 3 && query.scoreboard('swordatkcd') >= 0"},
+						{"unit_j_west":"query.get_equipped_item_name=='construction_unit_j' && query.is_using_item && query.scoreboard('direction') == 4 && query.scoreboard('swordatkcd') >= 0"},
+						{"construction_no_direction":"(query.get_equipped_item_name=='construction_unit_a' || query.get_equipped_item_name=='construction_unit_b' || query.get_equipped_item_name=='construction_unit_c' || query.get_equipped_item_name=='construction_unit_d' || query.get_equipped_item_name=='construction_unit_e' || query.get_equipped_item_name=='construction_unit_f' || query.get_equipped_item_name=='construction_unit_g' || query.get_equipped_item_name=='construction_unit_h' || query.get_equipped_item_name=='construction_unit_i' || query.get_equipped_item_name=='construction_unit_j') && query.is_using_item && query.scoreboard('direction') == 0 && query.scoreboard('swordatkcd') >= 0"}
+					]
+				},
+				"constructor_target": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/scoreboard objectives add swordatkcd dummy",
+						"/summon construction:constructor_target",
+						"/scoreboard players set @s swordatkcd -10"
+					]
+				},
+				"constructor_flat": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/scoreboard objectives add swordatkcd dummy",
+						"/summon construction:constructor_flat",
+						"/scoreboard players set @s swordatkcd -10"
+					]
+				},
+				"constructor_vertical": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/scoreboard objectives add swordatkcd dummy",
+						"/summon construction:constructor_vertical",
+						"/scoreboard players set @s swordatkcd -10"
+					]
+				},
+				"constructor_remove": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/kill @e[family=construction]",
+						"/scoreboard players set @s swordatkcd -3"
+					]
+				},
+				"constructor_rotate": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/scoreboard objectives add direction dummy",
+						"/scoreboard players set @s[ry=-135,rym=135] direction 1",
+						"/title @s[ry=-135,rym=135] actionbar 设定方向-北\nset direction: North",
+						"/scoreboard players set @s[ry=45,rym=-45] direction 2",
+						"/title @s[ry=45,rym=-45] actionbar 设定方向-南\nset direction: South",
+						"/scoreboard players set @s[ry=-45,rym=-135] direction 3",
+						"/title @s[ry=-45,rym=-135] actionbar 设定方向-东\nset direction: East",
+						"/scoreboard players set @s[ry=135,rym=45] direction 4",
+						"/title @s[ry=135,rym=45] actionbar 设定方向-西\nset direction: West",
+						"/scoreboard players set @s swordatkcd -3"
+					]
+				},
+				"construction_no_direction": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 未设定方向\nDirection not set",
+						"/scoreboard players set @s swordatkcd -3"
+					]
+				},
+				"constructor_filler_remove": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/fill ~-3 ~-3 ~-3 ~3 ~5 ~3 air replace blocks:framework"
+					]
+				},
+				"constructor_filler_wall_cobblestone": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/fill ~-3 ~-3 ~-3 ~3 ~5 ~3 cobblestone_wall replace blocks:framework"
+					]
+				},
+				"constructor_filler_wall_mossy_cobblestone": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/fill ~-3 ~-3 ~-3 ~3 ~5 ~3 mossy_cobblestone_wall replace blocks:framework"
+					]
+				},
+				"constructor_filler_wall_granite": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/fill ~-3 ~-3 ~-3 ~3 ~5 ~3 granite_wall replace blocks:framework"
+					]
+				},
+				"constructor_filler_wall_diorite": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/fill ~-3 ~-3 ~-3 ~3 ~5 ~3 diorite_wall replace blocks:framework"
+					]
+				},
+				"constructor_filler_wall_andesite": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/fill ~-3 ~-3 ~-3 ~3 ~5 ~3 andesite_wall replace blocks:framework"
+					]
+				},
+				"constructor_filler_wall_sandstone": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/fill ~-3 ~-3 ~-3 ~3 ~5 ~3 sandstone_wall replace blocks:framework"
+					]
+				},
+				"constructor_filler_wall_red_sandstone": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/fill ~-3 ~-3 ~-3 ~3 ~5 ~3 red_sandstone_wall replace blocks:framework"
+					]
+				},
+				"constructor_filler_wall_stone_brick": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/fill ~-3 ~-3 ~-3 ~3 ~5 ~3 stone_brick_wall replace blocks:framework"
+					]
+				},
+				"constructor_filler_wall_mossy_stone_brick": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/fill ~-3 ~-3 ~-3 ~3 ~5 ~3 mossy_stone_brick_wall replace blocks:framework"
+					]
+				},
+				"constructor_filler_wall_cobbled_deepslate": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/fill ~-3 ~-3 ~-3 ~3 ~5 ~3 cobbled_deepslate_wall replace blocks:framework"
+					]
+				},
+				"constructor_filler_wall_polished_deepslate": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/fill ~-3 ~-3 ~-3 ~3 ~5 ~3 polished_deepslate_wall replace blocks:framework"
+					]
+				},
+				"constructor_filler_wall_deepslate_brick": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/fill ~-3 ~-3 ~-3 ~3 ~5 ~3 deepslate_brick_wall replace blocks:framework"
+					]
+				},
+				"constructor_filler_wall_brick": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/fill ~-3 ~-3 ~-3 ~3 ~5 ~3 brick_wall replace blocks:framework"
+					]
+				},
+				"constructor_filler_cobblestone": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/fill ~-3 ~-3 ~-3 ~3 ~5 ~3 cobblestone replace blocks:framework"
+					]
+				},
+				"constructor_filler_mossy_cobblestone": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/fill ~-3 ~-3 ~-3 ~3 ~5 ~3 mossy_cobblestone replace blocks:framework"
+					]
+				},
+				"constructor_filler_granite": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/fill ~-3 ~-3 ~-3 ~3 ~5 ~3 granite replace blocks:framework"
+					]
+				},
+				"constructor_filler_diorite": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/fill ~-3 ~-3 ~-3 ~3 ~5 ~3 diorite replace blocks:framework"
+					]
+				},
+				"constructor_filler_andesite": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/fill ~-3 ~-3 ~-3 ~3 ~5 ~3 andesite replace blocks:framework"
+					]
+				},
+				"constructor_filler_sandstone": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/fill ~-3 ~-3 ~-3 ~3 ~5 ~3 sandstone replace blocks:framework"
+					]
+				},
+				"constructor_filler_red_sandstone": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/fill ~-3 ~-3 ~-3 ~3 ~5 ~3 red_sandstone replace blocks:framework"
+					]
+				},
+				"constructor_filler_stone_brick": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/fill ~-3 ~-3 ~-3 ~3 ~5 ~3 stone_bricks replace blocks:framework"
+					]
+				},
+				"constructor_filler_mossy_stone_brick": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/fill ~-3 ~-3 ~-3 ~3 ~5 ~3 mossy_stone_bricks replace blocks:framework"
+					]
+				},
+				"constructor_filler_cobbled_deepslate": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/fill ~-3 ~-3 ~-3 ~3 ~5 ~3 cobbled_deepslate replace blocks:framework"
+					]
+				},
+				"constructor_filler_polished_deepslate": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/fill ~-3 ~-3 ~-3 ~3 ~5 ~3 polished_deepslate replace blocks:framework"
+					]
+				},
+				"constructor_filler_deepslate_brick": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/fill ~-3 ~-3 ~-3 ~3 ~5 ~3 deepslate_bricks replace blocks:framework"
+					]
+				},
+				"constructor_filler_brick_block": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/fill ~-3 ~-3 ~-3 ~3 ~5 ~3 brick_block replace blocks:framework"
+					]
+				},
+				"constructor_filler_stone": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/fill ~-3 ~-3 ~-3 ~3 ~5 ~3 stone replace blocks:framework"
+					]
+				},
+				"constructor_filler_sand": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/fill ~-3 ~-3 ~-3 ~3 ~5 ~3 sand replace blocks:framework"
+					]
+				},
+				"constructor_filler_gravel": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/fill ~-3 ~-3 ~-3 ~3 ~5 ~3 gravel replace blocks:framework"
+					]
+				},
+				"constructor_filler_scaffolding": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/fill ~-3 ~-3 ~-3 ~3 ~5 ~3 scaffolding replace blocks:framework"
+					]
+				},
+				"unit_a_preview": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/function unit_a"
+					]
+				},
+				"unit_a_north": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/structure load mystructure:construction_a ~-10 ~-1 ~-13 270_degrees",
+						"/scoreboard players set @s direction 0",
+						"/replaceitem entity @s slot.weapon.mainhand 0 air",
+						"/scoreboard players set @s swordatkcd -3"
+					]
+				},
+				"unit_a_south": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/structure load mystructure:construction_a ~-3 ~-1 ~1 90_degrees",
+						"/scoreboard players set @s direction 0",
+						"/replaceitem entity @s slot.weapon.mainhand 0 air",
+						"/scoreboard players set @s swordatkcd -3"
+					]
+				},
+				"unit_a_east": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/structure load mystructure:construction_a ~1 ~-1 ~-10 0_degrees",
+						"/scoreboard players set @s direction 0",
+						"/replaceitem entity @s slot.weapon.mainhand 0 air",
+						"/scoreboard players set @s swordatkcd -3"
+					]
+				},
+				"unit_a_west": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/structure load mystructure:construction_a ~-13 ~-1 ~-3 180_degrees",
+						"/scoreboard players set @s direction 0",
+						"/replaceitem entity @s slot.weapon.mainhand 0 air",
+						"/scoreboard players set @s swordatkcd -3"
+					]
+				},
+				"unit_b_preview": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/function unit_b"
+					]
+				},
+				"unit_b_north": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/structure load mystructure:construction_b ~-7 ~-3 ~-10 180_degrees",
+						"/scoreboard players set @s direction 0",
+						"/replaceitem entity @s slot.weapon.mainhand 0 air",
+						"/scoreboard players set @s swordatkcd -3"
+					]
+				},
+				"unit_b_south": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/structure load mystructure:construction_b ~-3 ~-3 ~1 0_degrees",
+						"/scoreboard players set @s direction 0",
+						"/replaceitem entity @s slot.weapon.mainhand 0 air",
+						"/scoreboard players set @s swordatkcd -3"
+					]
+				},
+				"unit_b_east": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/structure load mystructure:construction_b ~1 ~-3 ~-7 270_degrees",
+						"/scoreboard players set @s direction 0",
+						"/replaceitem entity @s slot.weapon.mainhand 0 air",
+						"/scoreboard players set @s swordatkcd -3"
+					]
+				},
+				"unit_b_west": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/structure load mystructure:construction_b ~-10 ~-3 ~-3 90_degrees",
+						"/scoreboard players set @s direction 0",
+						"/replaceitem entity @s slot.weapon.mainhand 0 air",
+						"/scoreboard players set @s swordatkcd -3"
+					]
+				},
+				"unit_c_preview": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/function unit_c"
+					]
+				},
+				"unit_c_north": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/structure load mystructure:construction_c ~-5 ~-1 ~-10 180_degrees",
+						"/scoreboard players set @s direction 0",
+						"/replaceitem entity @s slot.weapon.mainhand 0 air",
+						"/scoreboard players set @s swordatkcd -3"
+					]
+				},
+				"unit_c_south": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/structure load mystructure:construction_c ~-6 ~-1 ~1 0_degrees",
+						"/scoreboard players set @s direction 0",
+						"/replaceitem entity @s slot.weapon.mainhand 0 air",
+						"/scoreboard players set @s swordatkcd -3"
+					]
+				},
+				"unit_c_east": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/structure load mystructure:construction_c ~1 ~-1 ~-5 270_degrees",
+						"/scoreboard players set @s direction 0",
+						"/replaceitem entity @s slot.weapon.mainhand 0 air",
+						"/scoreboard players set @s swordatkcd -3"
+					]
+				},
+				"unit_c_west": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/structure load mystructure:construction_c ~-10 ~-1 ~-6 90_degrees",
+						"/scoreboard players set @s direction 0",
+						"/replaceitem entity @s slot.weapon.mainhand 0 air",
+						"/scoreboard players set @s swordatkcd -3"
+					]
+				},
+				"unit_d_preview": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/function unit_d"
+					]
+				},
+				"unit_d_north": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/structure load mystructure:construction_d ~-7 ~-1 ~-11 180_degrees",
+						"/scoreboard players set @s direction 0",
+						"/replaceitem entity @s slot.weapon.mainhand 0 air",
+						"/scoreboard players set @s swordatkcd -3"
+					]
+				},
+				"unit_d_south": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/structure load mystructure:construction_d ~-10 ~-1 ~0 0_degrees",
+						"/scoreboard players set @s direction 0",
+						"/replaceitem entity @s slot.weapon.mainhand 0 air",
+						"/scoreboard players set @s swordatkcd -3"
+					]
+				},
+				"unit_d_east": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/structure load mystructure:construction_d ~ ~-1 ~-7 270_degrees",
+						"/scoreboard players set @s direction 0",
+						"/replaceitem entity @s slot.weapon.mainhand 0 air",
+						"/scoreboard players set @s swordatkcd -3"
+					]
+				},
+				"unit_d_west": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/structure load mystructure:construction_d ~-11 ~-1 ~-10 90_degrees",
+						"/scoreboard players set @s direction 0",
+						"/replaceitem entity @s slot.weapon.mainhand 0 air",
+						"/scoreboard players set @s swordatkcd -3"
+					]
+				},
+				"unit_e_preview": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/function unit_e"
+					]
+				},
+				"unit_e_north": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/structure load mystructure:construction_e ~-8 ~-1 ~-12 180_degrees",
+						"/scoreboard players set @s direction 0",
+						"/replaceitem entity @s slot.weapon.mainhand 0 air",
+						"/scoreboard players set @s swordatkcd -3"
+					]
+				},
+				"unit_e_south": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/structure load mystructure:construction_e ~-8 ~-1 ~1 0_degrees",
+						"/scoreboard players set @s direction 0",
+						"/replaceitem entity @s slot.weapon.mainhand 0 air",
+						"/scoreboard players set @s swordatkcd -3"
+					]
+				},
+				"unit_e_east": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/structure load mystructure:construction_e ~1 ~-1 ~-8 270_degrees",
+						"/scoreboard players set @s direction 0",
+						"/replaceitem entity @s slot.weapon.mainhand 0 air",
+						"/scoreboard players set @s swordatkcd -3"
+					]
+				},
+				"unit_e_west": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/structure load mystructure:construction_e ~-12 ~-1 ~-8 90_degrees",
+						"/scoreboard players set @s direction 0",
+						"/replaceitem entity @s slot.weapon.mainhand 0 air",
+						"/scoreboard players set @s swordatkcd -3"
+					]
+				},
+				"unit_f_preview": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/function unit_f"
+					]
+				},
+				"unit_f_north": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/structure load mystructure:construction_f ~-5 ~-1 ~-9 180_degrees",
+						"/scoreboard players set @s direction 0",
+						"/replaceitem entity @s slot.weapon.mainhand 0 air",
+						"/scoreboard players set @s swordatkcd -3"
+					]
+				},
+				"unit_f_south": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/structure load mystructure:construction_f ~-3 ~-1 ~1 0_degrees",
+						"/scoreboard players set @s direction 0",
+						"/replaceitem entity @s slot.weapon.mainhand 0 air",
+						"/scoreboard players set @s swordatkcd -3"
+					]
+				},
+				"unit_f_east": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/structure load mystructure:construction_f ~1 ~-1 ~-5 270_degrees",
+						"/scoreboard players set @s direction 0",
+						"/replaceitem entity @s slot.weapon.mainhand 0 air",
+						"/scoreboard players set @s swordatkcd -3"
+					]
+				},
+				"unit_f_west": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/structure load mystructure:construction_f ~-9 ~-1 ~-3 90_degrees",
+						"/scoreboard players set @s direction 0",
+						"/replaceitem entity @s slot.weapon.mainhand 0 air",
+						"/scoreboard players set @s swordatkcd -3"
+					]
+				},
+				"unit_g_preview": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/function unit_g"
+					]
+				},
+				"unit_g_north": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/structure load mystructure:construction_g ~-4 ~-1 ~-8 180_degrees",
+						"/scoreboard players set @s direction 0",
+						"/replaceitem entity @s slot.weapon.mainhand 0 air",
+						"/scoreboard players set @s swordatkcd -3"
+					]
+				},
+				"unit_g_south": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/structure load mystructure:construction_g ~-4 ~-1 ~1 0_degrees",
+						"/scoreboard players set @s direction 0",
+						"/replaceitem entity @s slot.weapon.mainhand 0 air",
+						"/scoreboard players set @s swordatkcd -3"
+					]
+				},
+				"unit_g_east": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/structure load mystructure:construction_g ~1 ~-1 ~-4 270_degrees",
+						"/scoreboard players set @s direction 0",
+						"/replaceitem entity @s slot.weapon.mainhand 0 air",
+						"/scoreboard players set @s swordatkcd -3"
+					]
+				},
+				"unit_g_west": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/structure load mystructure:construction_g ~-8 ~-1 ~-4 90_degrees",
+						"/scoreboard players set @s direction 0",
+						"/replaceitem entity @s slot.weapon.mainhand 0 air",
+						"/scoreboard players set @s swordatkcd -3"
+					]
+				},
+				"unit_h_preview": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/function unit_h"
+					]
+				},
+				"unit_h_north": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/structure load mystructure:construction_h ~-10 ~-1 ~-21 180_degrees",
+						"/scoreboard players set @s direction 0",
+						"/replaceitem entity @s slot.weapon.mainhand 0 air",
+						"/scoreboard players set @s swordatkcd -3"
+					]
+				},
+				"unit_h_south": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/structure load mystructure:construction_h ~-10 ~-1 ~1 0_degrees",
+						"/scoreboard players set @s direction 0",
+						"/replaceitem entity @s slot.weapon.mainhand 0 air",
+						"/scoreboard players set @s swordatkcd -3"
+					]
+				},
+				"unit_h_east": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/structure load mystructure:construction_h ~1 ~-1 ~-10 270_degrees",
+						"/scoreboard players set @s direction 0",
+						"/replaceitem entity @s slot.weapon.mainhand 0 air",
+						"/scoreboard players set @s swordatkcd -3"
+					]
+				},
+				"unit_h_west": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/structure load mystructure:construction_h ~-21 ~-1 ~-10 90_degrees",
+						"/scoreboard players set @s direction 0",
+						"/replaceitem entity @s slot.weapon.mainhand 0 air",
+						"/scoreboard players set @s swordatkcd -3"
+					]
+				},
+				"unit_i_preview": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/function unit_i"
+					]
+				},
+				"unit_i_north": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/structure load mystructure:construction_i ~-6 ~-1 ~-7 270_degrees",
+						"/scoreboard players set @s direction 0",
+						"/replaceitem entity @s slot.weapon.mainhand 0 air",
+						"/scoreboard players set @s swordatkcd -3"
+					]
+				},
+				"unit_i_south": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/structure load mystructure:construction_i ~-5 ~-1 ~1 90_degrees",
+						"/scoreboard players set @s direction 0",
+						"/replaceitem entity @s slot.weapon.mainhand 0 air",
+						"/scoreboard players set @s swordatkcd -3"
+					]
+				},
+				"unit_i_east": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/structure load mystructure:construction_i ~1 ~-1 ~-6 0_degrees",
+						"/scoreboard players set @s direction 0",
+						"/replaceitem entity @s slot.weapon.mainhand 0 air",
+						"/scoreboard players set @s swordatkcd -3"
+					]
+				},
+				"unit_i_west": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/structure load mystructure:construction_i ~-7 ~-1 ~-5 180_degrees",
+						"/scoreboard players set @s direction 0",
+						"/replaceitem entity @s slot.weapon.mainhand 0 air",
+						"/scoreboard players set @s swordatkcd -3"
+					]
+				},
+				"unit_j_preview": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/function unit_j"
+					]
+				},
+				"unit_j_north": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/structure load mystructure:templet ~-12 ~-1 ~-17 90_degrees",
+						"/scoreboard players set @s direction 0",
+						"/replaceitem entity @s slot.weapon.mainhand 0 air",
+						"/scoreboard players set @s swordatkcd -3"
+					]
+				},
+				"unit_j_south": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/structure load mystructure:templet ~-12 ~-1 ~1 270_degrees",
+						"/scoreboard players set @s direction 0",
+						"/replaceitem entity @s slot.weapon.mainhand 0 air",
+						"/scoreboard players set @s swordatkcd -3"
+					]
+				},
+				"unit_j_east": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/structure load mystructure:templet ~1 ~-1 ~-12 180_degrees",
+						"/scoreboard players set @s direction 0",
+						"/replaceitem entity @s slot.weapon.mainhand 0 air",
+						"/scoreboard players set @s swordatkcd -3"
+					]
+				},
+				"unit_j_west": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/structure load mystructure:templet ~-17 ~-1 ~-12 0_degrees",
+						"/scoreboard players set @s direction 0",
+						"/replaceitem entity @s slot.weapon.mainhand 0 air",
+						"/scoreboard players set @s swordatkcd -3"
+					]
+				}
+			}
+		}
+ 	}
+ }

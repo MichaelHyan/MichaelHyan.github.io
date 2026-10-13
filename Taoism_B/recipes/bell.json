@@ -1,0 +1,36 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "items:bell_s"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "aca",
+      "aba",
+      " b "
+    ],
+    "key": {
+      "a": {
+        "item": "copper_ingot"
+      },
+      "b": {
+        "item": "items:qi"
+      },
+      "c": {
+        "item": "items:pearlz"
+      }
+    },
+    "unlock": [
+      {
+        "item": "items:pearl"
+      }
+    ],
+    "result": [{
+      "item": "items:bell_s",
+      "count": 1
+    }]
+  }
+}

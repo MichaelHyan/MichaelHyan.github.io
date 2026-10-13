@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "items:sebookd",
+      "category": "Nature"
+    },
+
+    "components": {
+      "minecraft:icon": "sebookd",
+      "minecraft:render_offsets": "sebookd"
+    }
+  }
+}

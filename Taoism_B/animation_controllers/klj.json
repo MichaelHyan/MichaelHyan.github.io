@@ -1,0 +1,153 @@
+{
+	"format_version": "1.8.0",
+	"animation_controllers": {
+		"controller.animation.klj":{
+			"states":{
+				"base_jeta":{
+					"transitions":[
+						{"klj_b":"query.get_equipped_item_name=='klj' && query.is_using_item && query.scoreboard('charge') == 10"},
+						{"klj_c":"query.get_equipped_item_name=='klj' && !query.is_sneaking && query.scoreboard('charge') == 0"},
+						{"klj_d":"query.get_equipped_item_name=='klj' && !query.is_sneaking && query.scoreboard('charge') == 1"},
+						{"klj_e":"query.get_equipped_item_name=='klj' && !query.is_sneaking && query.scoreboard('charge') == 2"},
+						{"klj_f":"query.get_equipped_item_name=='klj' && !query.is_sneaking && query.scoreboard('charge') == 3"},
+						{"klj_g":"query.get_equipped_item_name=='klj' && !query.is_sneaking && query.scoreboard('charge') == 4"},
+						{"klj_h":"query.get_equipped_item_name=='klj' && !query.is_sneaking && query.scoreboard('charge') == 5"},
+						{"klj_i":"query.get_equipped_item_name=='klj' && !query.is_sneaking && query.scoreboard('charge') == 6"},
+						{"klj_j":"query.get_equipped_item_name=='klj' && !query.is_sneaking && query.scoreboard('charge') == 7"},
+						{"klj_k":"query.get_equipped_item_name=='klj' && !query.is_sneaking && query.scoreboard('charge') == 8"},
+						{"klj_l":"query.get_equipped_item_name=='klj' && !query.is_sneaking && query.scoreboard('charge') == 9"}
+					]
+				},
+				"klj_b": {
+					"transitions": [
+						{
+							"base_jeta": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/function bglp2",
+						"/tag @n[rm=1,type=!item,type=!arrow] add klj",
+						"/summon armor_stand (H) ~ ~ ~",
+						"/tp @e[tag=klj]",
+						"/tp @e[tag=klj] @e[name=(H)]",
+						"/kill @e[name=(H)]",
+						"/tag @e remove klj",
+						"/function bglp2",
+						"/scoreboard players set @s charge 0"
+					]
+				},
+				"klj_c": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/scoreboard objectives add charge dummy",
+						"/scoreboard players add @s charge 1",
+						"/title @s actionbar §7|§0|||||||||"
+					]
+				},
+				"klj_d": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/scoreboard players add @s charge 1",
+						"/title @s actionbar §7||§0||||||||"
+					]
+				},
+				"klj_e": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/scoreboard players add @s charge 1",
+						"/title @s actionbar §7|||§0|||||||"
+					]
+				},
+				"klj_f": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/scoreboard players add @s charge 1",
+						"/title @s actionbar §7||||§0||||||"
+					]
+				},
+				"klj_g": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/scoreboard players add @s charge 1",
+						"/title @s actionbar §7|||||§0|||||"
+					]
+				},
+				"klj_h": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/scoreboard players add @s charge 1",
+						"/title @s actionbar §7||||||§0||||"
+					]
+				},
+				"klj_i": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/scoreboard players add @s charge 1",
+						"/title @s actionbar §7|||||||§0|||"
+					]
+				},
+				"klj_j": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/scoreboard players add @s charge 1",
+						"/title @s actionbar §7||||||||§0||"
+					]
+				},
+				"klj_k": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/scoreboard players add @s charge 1",
+						"/title @s actionbar §7|||||||||§0|"
+					]
+				},
+				"klj_l": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/scoreboard players add @s charge 1",
+						"/title @s actionbar §7||||||||||"
+					]
+				}
+			}
+		}
+ 	}
+ }

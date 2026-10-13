@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "ny:salt",
+      "category": "Nature"
+    },
+
+    "components": {
+      "minecraft:icon": "salt",
+      "minecraft:render_offsets": "salt"
+    }
+  }
+}

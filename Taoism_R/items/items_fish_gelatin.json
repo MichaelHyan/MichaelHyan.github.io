@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "items:fish_gelatin",
+      "category": "Nature"
+    },
+
+    "components": {
+      "minecraft:icon": "fish_gelatin",
+      "minecraft:render_offsets": "fish_gelatin"
+    }
+  }
+}

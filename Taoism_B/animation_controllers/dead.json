@@ -1,0 +1,56 @@
+{
+	"format_version": "1.8.0",
+	"animation_controllers": {
+		"controller.animation.dead":{
+			"states":{
+				"base_jeta":{
+					"transitions":[
+						{"dead_a":"query.is_alive == 0 && query.scoreboard('spawnc') == 0"},
+						{"dead_b":"query.is_alive != 0 && query.scoreboard('spawnc') == 1"},
+						{"dead_c":"query.is_alive != 0 && query.scoreboard('spawnc') == 0"}
+					]
+				},
+				"dead_a": {
+					"transitions": [
+						{
+							"base_jeta": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/scoreboard objectives add spawnc dummy",
+						"/scoreboard players set @s spawnc 1",
+						"/function bgmstop",
+						"/summon entity:zombie_mimic_c_dead"
+					]
+				},
+				"dead_b": {
+					"transitions": [
+						{
+							"base_jeta": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s spawnc 0",
+						"/effect @s[tag=tao] regeneration 10 3 true",
+						"/effect @s[tag=tao_unitmate] regeneration 20 3 true"
+					]
+				},
+				"dead_c": {
+					"transitions": [
+						{
+							"base_jeta": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/effect @s[tag=tao] strength infinite 1 true",
+						"/effect @s[tag=tao_enhance] night_vision infinite 1 true",
+						"/effect @s[tag=tao] health_boost infinite 4 true",
+						"/effect @s[tag=tao_ultimate] health_boost infinite 9 true",
+						"/effect @s[tag=ft] speed infinite 1 true",
+						"/effect @s[tag=ft] jump_boost infinite 1 true"
+					]
+				}
+			}
+		}
+ 	}
+ }

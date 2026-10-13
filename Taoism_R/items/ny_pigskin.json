@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "ny:pigskin",
+      "category": "Nature"
+    },
+
+    "components": {
+      "minecraft:icon": "pigskin",
+      "minecraft:render_offsets": "pigskin"
+    }
+  }
+}

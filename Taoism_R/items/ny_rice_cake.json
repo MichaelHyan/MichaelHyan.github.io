@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "ny:rice_cake",
+      "category": "Nature"
+    },
+
+    "components": {
+      "minecraft:icon": "rice_cake",
+      "minecraft:render_offsets": "rice_cake"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+	"format_version": "1.8.0",
+	"animation_controllers": {
+		"controller.animation.unknown_end":{
+			"states":{
+				"base_jeta":{
+					"transitions":[
+						{"boss_dead":"query.life_time <= 204 && query.is_alive == 0"}
+					]
+				},
+				"boss_dead": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/function bgmstop",
+						"/kill @e[family=reb]",
+						"/summon entity:boss_despawn",
+						"/camera @a fade time 0 10 2",
+						"/scoreboard players set @a maxchapter 9"
+					]
+				}
+			}
+		}
+ 	}
+ }

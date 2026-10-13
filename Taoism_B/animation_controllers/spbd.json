@@ -1,0 +1,53 @@
+{
+	"format_version": "1.8.0",
+	"animation_controllers": {
+		"controller.animation.spbd":{
+			"states":{
+				"base_jeta":{
+					"transitions":[
+						{"spbd_a":"query.life_time <= 1"},
+						{"spbd_b":"query.life_time == 1.2"},
+						{"spbd_c":"query.life_time > 1.2"}
+					]
+				},
+				"spbd_a": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/particle minecraft:basic_flame_particle ~ ~ ~",
+						"/damage @e[tag=spbb,tag=!spbd,r=2] 15",
+						"/tag @e[type=!player,type=!item,family=!taoism,r=2] add spbd",
+						"/effect @e[tag=spbd,r=2] wither 60 1",
+						"/tag @e[r=2] remove spbb"
+					]
+				},
+				"spbd_b": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/particle minecraft:large_explosion",
+						"/effect @s invisibility 1 1 true",
+						"/kill @s"
+					]
+				},
+				"spbd_c": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/effect @s invisibility 1 1 true",
+						"/kill @s"
+					]
+				}
+			}
+		}
+ 	}
+ }

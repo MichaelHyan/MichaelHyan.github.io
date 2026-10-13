@@ -1,0 +1,39 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "items:sword_l"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "dad",
+      "cbc",
+      "dcd"
+    ],
+    "key": {
+      "a": {
+        "item": "items:spe"
+      },
+      "b": {
+        "item": "items:sword_b"
+      },
+      "c": {
+        "item": "items:qi"
+      },
+      "d": {
+        "item": "items:talisman"
+      }
+    },
+    "unlock": [
+      {
+        "item": "items:sword_b"
+      }
+    ],
+    "result": {
+      "item": "items:sword_l",
+      "count": 1
+    }
+  }
+}

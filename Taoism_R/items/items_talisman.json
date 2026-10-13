@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "items:talisman",
+      "category": "Nature"
+    },
+
+    "components": {
+      "minecraft:icon": "talisman",
+      "minecraft:render_offsets": "talisman"
+    }
+  }
+}

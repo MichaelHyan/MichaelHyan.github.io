@@ -1,0 +1,600 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "echa": {
+      "textures": "textures/items/echa.png"
+    },
+    "echb": {
+      "textures": "textures/items/echb.png"
+    },
+    "qi_sword": {
+      "textures": "textures/items/qi_sword.png"
+    },
+    "qi_sword_off": {
+      "textures": "textures/items/qi_sword.png"
+    },
+    "sword_f": {
+      "textures": "textures/items/sword_f.png"
+    },
+    "sword_m": {
+      "textures": "textures/items/sword_m.png"
+    },
+    "sword_c": {
+      "textures": "textures/items/sword_c.png"
+    },
+    "sword_d": {
+      "textures": "textures/items/sword_d.png"
+    },
+    "sword_ql": {
+      "textures": "textures/items/sword_ql.png"
+    },
+    "soul_powder": {
+      "textures": "textures/items/soul_powder.png"
+    },
+    "talisman_ql": {
+      "textures": "textures/items/talisman_ql.png"
+    },
+    "talisman_a": {
+      "textures": "textures/items/talisman_a.png"
+    },
+    "sword_qi": {
+      "textures": "textures/items/sword_qi.png"
+    },
+    "sword_qi_t1": {
+      "textures": "textures/items/sword_qi_t1.png"
+    },
+    "sword_qi_t2": {
+      "textures": "textures/items/sword_qi_t2.png"
+    },
+    "sword_qi_t3": {
+      "textures": "textures/items/sword_qi_t3.png"
+    },
+    "qi": {
+      "textures": "textures/items/qi.png"
+    },
+    "qi_c": {
+      "textures": "textures/items/qi_c.png"
+    },
+    "cane": {
+      "textures": "textures/items/cane.png"
+    },
+    "lotus": {
+      "textures": "textures/items/lotus.png"
+    },
+    "fbusket": {
+      "textures": "textures/items/fbusket.png"
+    },
+	  "disk_taoism": {
+      "textures": "textures/items/disk_taoism.png"
+    },
+    "scripture": {
+      "textures": "textures/items/scripture.png"
+    },
+    "scripture_s": {
+      "textures": "textures/items/scripture_s.png"
+    },
+    "scripture_f": {
+      "textures": "textures/items/scripture_f.png"
+    },
+    "scripture_b": {
+      "textures": "textures/items/scripture_b.png"
+    },
+    "pill": {
+      "textures": "textures/items/pill.png"
+    },
+    "pearl": {
+      "textures": "textures/items/pearl.png"
+    },
+    "brush_n": {
+      "textures": "textures/items/brush_n.png"
+    },
+    "brush_p": {
+      "textures": "textures/items/brush_p.png"
+    },
+    "cinnabar_crystal": {
+      "textures": "textures/items/cinnabar_crystal.png"
+    },
+    "cinnabar": {
+      "textures": "textures/items/cinnabar.png"
+    },
+    "talisman_t": {
+      "textures": "textures/items/talisman_t.png"
+    },
+    "talisman": {
+      "textures": "textures/items/talisman.png"
+    },
+    "talisman_g": {
+      "textures": "textures/items/talisman_g.png"
+    },
+    "talisman_e": {
+      "textures": "textures/items/talisman_e.png"
+    },
+    "sword_t": {
+      "textures": "textures/items/sword_t.png"
+    },
+    "sword_tg": {
+      "textures": "textures/items/sword_tg.png"
+    },
+    "sword_ts": {
+      "textures": "textures/items/sword_ts.png"
+    },
+    "sword_b": {
+      "textures": "textures/items/sword_b.png"
+    },
+    "sword_q": {
+      "textures": "textures/items/sword_q.png"
+    },
+    "sword_l": {
+      "textures": "textures/items/sword_l.png"
+    },
+    "sword_s": {
+      "textures": "textures/items/sword_s.png"
+    },
+    "sword_e": {
+      "textures": "textures/items/sword_e.png"
+    },
+    "sword_w": {
+      "textures": "textures/items/sword_w.png"
+    },
+    "sword_u": {
+      "textures": "textures/items/sword_ua.png"
+    },
+    "sword_ua": {
+      "textures": "textures/items/sword_u.png"
+    },
+    "lightning_wood": {
+      "textures": "textures/items/lightning_wood.png"
+    },
+    "spirit": {
+      "textures": "textures/items/spirit.png"
+    },
+    "sword_sp": {
+      "textures": "textures/items/sword_sp.png"
+    },
+    "longsword_wood": {
+      "textures": "textures/items/longsword_wood.png"
+    },
+    "longsword_stone": {
+      "textures": "textures/items/longsword_stone.png"
+    },
+    "longsword_copper": {
+      "textures": "textures/items/longsword_copper.png"
+    },
+    "longsword_iron": {
+      "textures": "textures/items/longsword_iron.png"
+    },
+    "longsword_gold": {
+      "textures": "textures/items/longsword_gold.png"
+    },
+    "longsword_diamond": {
+      "textures": "textures/items/longsword_diamond.png"
+    },
+    "longsword_netherite": {
+      "textures": "textures/items/longsword_netherite.png"
+    },
+    "wond":{
+      "textures": "textures/items/wond.png"
+    },
+	  "soul_banner": {
+      "textures": "textures/items/soul_banner.png"
+    },
+    "hy_banner": {
+      "textures": "textures/items/hy_banner.png"
+    },
+    "mirror_a": {
+      "textures": "textures/items/mirror_a.png"
+    },
+    "mirror_b": {
+      "textures": "textures/items/mirror_b.png"
+    },
+    "mirror_c": {
+      "textures": "textures/items/mirror_c.png"
+    },
+    "mirror_d": {
+      "textures": "textures/items/mirror_d.png"
+    },
+    "bell": {
+      "textures": "textures/items/bell.png"
+    },
+    "bell_a": {
+      "textures": "textures/items/bell_a.png"
+    },
+    "gourd": {
+      "textures": "textures/items/gourd.png"
+    },
+    "wul": {
+      "textures": "textures/items/wul.png"
+    },
+    "whisk": {
+      "textures": "textures/items/whisk.png"
+    },
+    "ring": {
+      "textures": "textures/items/ring.png"
+    },
+    "bottle": {
+      "textures": "textures/items/bottle.png"
+    },
+    "fish_belly": {
+      "textures": "textures/items/fish_belly.png"
+    },
+    "fish_gelatin": {
+      "textures": "textures/items/fish_gelatin.png"
+    },
+    "klj": {
+      "textures": "textures/items/klj.png"
+    },
+    "bglpa": {
+      "textures": "textures/items/bglpa.png"
+    },
+    "bglpb": {
+      "textures": "textures/items/bglpb.png"
+    },
+    "phase": {
+      "textures": "textures/items/phase.png"
+    },
+    "spe": {
+      "textures": "textures/items/spe.png"
+    },
+    "tup": {
+      "textures": "textures/items/tup.png"
+    },
+    "ta": {
+      "textures": "textures/items/ta.png"
+    },
+    "tb": {
+      "textures": "textures/items/tb.png"
+    },
+    "tc": {
+      "textures": "textures/items/tc.png"
+    },
+    "ua": {
+      "textures": "textures/items/ua.png"
+    },
+    "ub": {
+      "textures": "textures/items/ub.png"
+    },
+    "uc": {
+      "textures": "textures/items/uc.png"
+    },
+    "ud": {
+      "textures": "textures/items/ud.png"
+    },
+    "ue": {
+      "textures": "textures/items/ue.png"
+    },
+    "uf": {
+      "textures": "textures/items/uf.png"
+    },
+    "ug": {
+      "textures": "textures/items/ug.png"
+    },
+    "tab": {
+      "textures": "textures/items/tab.png"
+    },
+    "tac": {
+      "textures": "textures/items/tac.png"
+    },
+    "tad": {
+      "textures": "textures/items/tad.png"
+    },
+    "tae": {
+      "textures": "textures/items/tae.png"
+    },
+    "tag": {
+      "textures": "textures/items/tag.png"
+    },
+    "tba": {
+      "textures": "textures/items/tba.png"
+    },
+    "tbb": {
+      "textures": "textures/items/tbb.png"
+    },
+    "tbc": {
+      "textures": "textures/items/tbc.png"
+    },
+    "tbd": {
+      "textures": "textures/items/tbd.png"
+    },
+    "tbe": {
+      "textures": "textures/items/tbe.png"
+    },
+    "tbf": {
+      "textures": "textures/items/tbf.png"
+    },
+    "tbg": {
+      "textures": "textures/items/tbg.png"
+    },
+    "tca": {
+      "textures": "textures/items/tca.png"
+    },
+    "tcb": {
+      "textures": "textures/items/tcb.png"
+    },
+    "tcc": {
+      "textures": "textures/items/tcc.png"
+    },
+    "tcd": {
+      "textures": "textures/items/tcd.png"
+    },
+    "tce": {
+      "textures": "textures/items/tce.png"
+    },
+    "tcf": {
+      "textures": "textures/items/tcf.png"
+    },
+    "tcg": {
+      "textures": "textures/items/tcg.png"
+    },
+    "txp": {
+      "textures":"textures/items/txp.png"
+    },
+    "txpa": {
+      "textures":"textures/items/txpa.png"
+    },
+    "totem_f": {
+      "textures":"textures/items/totem_f.png"
+    },
+    "partner": {
+      "textures":"textures/items/partner.png"
+    },
+    "sguard": {
+      "textures":"textures/items/sguard.png"
+    },
+    "pearlz_p": {
+      "textures":"textures/items/pearlz_p.png"
+    },
+    "pearlz_o": {
+      "textures":"textures/items/pearlz_o.png"
+    },
+    "pearlz_s": {
+      "textures":"textures/items/pearlz_s.png"
+    },
+    "pearlz": {
+      "textures":"textures/items/pearlz.png"
+    },
+    "sword_za": {
+      "textures":"textures/items/sword_za.png"
+    },
+    "sword_zb": {
+      "textures":"textures/items/sword_zb.png"
+    },
+    "firegourd": {
+      "textures":"textures/items/firegourd.png"
+    },
+    "spegourd": {
+      "textures":"textures/items/spegourd.png"
+    },
+    "fball": {
+      "textures":"textures/items/fball.png"
+    },
+    "spba": {
+      "textures":"textures/items/spba.png"
+    },
+    "spbb": {
+      "textures":"textures/items/spbb.png"
+    },
+    "spbc": {
+      "textures":"textures/items/spbc.png"
+    },
+    "spbd": {
+      "textures":"textures/items/spbd.png"
+    },
+    "spbe": {
+      "textures":"textures/items/spbe.png"
+    },
+    "glutinous_rice": {
+      "textures":"textures/items/glutinous_rice.png"
+    },
+    "ruler": {
+      "textures":"textures/items/ruler.png"
+    },
+    "ball": {
+      "textures":"textures/items/ball.png"
+    },
+    "acbook": {
+      "textures":"textures/items/acbook.png"
+    },
+    "sebookb": {
+      "textures":"textures/items/sebookb.png"
+    },
+    "sebookc": {
+      "textures":"textures/items/sebookc.png"
+    },
+    "sebookd": {
+      "textures":"textures/items/sebookd.png"
+    },
+    "sebooke": {
+      "textures":"textures/items/sebooke.png"
+    },
+    "shield_q": {
+      "textures":"textures/items/shield.png"
+    },
+    "bike": {
+      "textures":"textures/items/bike.png"
+    },
+    "table": {
+      "textures":"textures/items/table.png"
+    },
+    "desk": {
+      "textures":"textures/items/desk.png"
+    },
+    "stoola": {
+      "textures":"textures/items/stoola.png"
+    },
+    "stoolb": {
+      "textures":"textures/items/stoolb.png"
+    },
+    "stoolc": {
+      "textures":"textures/items/stoolc.png"
+    },
+    "cabinet": {
+      "textures":"textures/items/cabinet.png"
+    },
+    "burner": {
+      "textures":"textures/items/burner.png"
+    },
+    "burnera": {
+      "textures":"textures/items/burnera.png"
+    },
+    "seal": {
+      "textures":"textures/items/seal.png"
+    },
+    "seal_e": {
+      "textures":"textures/items/seal_e.png"
+    },
+    "dumpling_a": {
+      "textures":"textures/ny/dumpling_a.png"
+    },
+    "dumpling_b": {
+      "textures":"textures/ny/dumpling_b.png"
+    },
+    "dumpling_c": {
+      "textures":"textures/ny/dumpling_c.png"
+    },
+    "dumpling_d": {
+      "textures":"textures/ny/dumpling_d.png"
+    },
+    "dumpling_e": {
+      "textures":"textures/ny/dumpling_e.png"
+    },
+    "dumpling_f": {
+      "textures":"textures/ny/dumpling_f.png"
+    },
+    "pigskin_jelly": {
+      "textures":"textures/ny/pigskin_jelly.png"
+    },
+    "scrambled_chicken": {
+      "textures":"textures/ny/scrambled_chicken.png"
+    },
+    "braised_pork": {
+      "textures":"textures/ny/braised_pork.png"
+    },
+    "braised_fish": {
+      "textures":"textures/ny/braised_fish.png"
+    },
+    "noodles": {
+      "textures":"textures/ny/noodles.png"
+    },
+    "flour": {
+      "textures":"textures/ny/flour.png"
+    },
+    "rice": {
+      "textures":"textures/ny/rice.png"
+    },
+    "steamed_bun": {
+      "textures":"textures/ny/steamed_bun.png"
+    },
+    "cabbage": {
+      "textures":"textures/ny/cabbage.png"
+    },
+    "rice_cake": {
+      "textures":"textures/ny/rice_cake.png"
+    },
+    "onion": {
+      "textures":"textures/ny/onion.png"
+    },
+    "ginger": {
+      "textures":"textures/ny/ginger.png"
+    },
+    "garlic": {
+      "textures":"textures/ny/garlic.png"
+    },
+    "seasoning": {
+      "textures":"textures/ny/seasoning.png"
+    },
+    "salt": {
+      "textures":"textures/ny/salt.png"
+    },
+    "dumpling_wrapper": {
+      "textures":"textures/ny/dumpling_wrapper.png"
+    },
+    "pigskin": {
+      "textures":"textures/ny/pigskin.png"
+    },
+    "knife": {
+      "textures":"textures/ny/knife.png"
+    },
+    "mooncake_a": {
+      "textures":"textures/ny/mooncake_a.png"
+    },
+    "mooncake_b": {
+      "textures":"textures/ny/mooncake_b.png"
+    },
+    "mooncake_c": {
+      "textures":"textures/ny/mooncake_c.png"
+    },
+    "mooncake_dry_a": {
+      "textures":"textures/ny/mooncake_a.png"
+    },
+    "mooncake_dry_b": {
+      "textures":"textures/ny/mooncake_b.png"
+    },
+    "mooncake_dry_c": {
+      "textures":"textures/ny/mooncake_c.png"
+    },
+    "pigoil": {
+      "textures":"textures/ny/pigoil.png"
+    },
+    "beanfilling": {
+      "textures":"textures/ny/beanfilling.png"
+    },
+    "nutfilling": {
+      "textures":"textures/ny/nutfilling.png"
+    },
+    "constructor_target": {
+      "textures":"textures/construction/target.png"
+    },
+    "constructor_flat": {
+      "textures":"textures/construction/flat.png"
+    },
+    "constructor_vertical": {
+      "textures":"textures/construction/vertical.png"
+    },
+    "constructor_filler": {
+      "textures":"textures/construction/filler.png"
+    },
+    "constructor_rotate": {
+      "textures":"textures/construction/rotate.png"
+    },
+    "core": {
+      "textures":"textures/construction/core.png"
+    },
+    "decoy": {
+      "textures":"textures/construction/decoy.png"
+    },
+    "bowgun": {
+      "textures":"textures/construction/bowgun.png"
+    },
+    "construction_unit_a": {
+      "textures":"textures/construction/unit_a.png"
+    },
+    "construction_unit_b": {
+      "textures":"textures/construction/unit_b.png"
+    },
+    "construction_unit_c": {
+      "textures":"textures/construction/unit_c.png"
+    },
+    "construction_unit_d": {
+      "textures":"textures/construction/unit_d.png"
+    },
+    "construction_unit_e": {
+      "textures":"textures/construction/unit_e.png"
+    },
+    "construction_unit_f": {
+      "textures":"textures/construction/unit_f.png"
+    },
+    "construction_unit_g": {
+      "textures":"textures/construction/unit_g.png"
+    },
+    "construction_unit_h": {
+      "textures":"textures/construction/unit_h.png"
+    },
+    "construction_unit_i": {
+      "textures":"textures/construction/unit_i.png"
+    },
+    "construction_unit_j": {
+      "textures":"textures/construction/unit_j.png"
+    }
+  }
+}

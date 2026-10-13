@@ -1,0 +1,36 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "items:sword_za"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "a a",
+      " b ",
+      "c c"
+    ],
+    "key": {
+      "a": {
+        "item": "items:pearlz_o"
+      },
+      "b": {
+        "item": "items:sword_e"
+      },
+      "c": {
+        "item": "items:cinnabar_crystal"
+      }
+    },
+    "unlock": [
+      {
+        "item": "items:pearlz_o"
+      }
+    ],
+    "result": [{
+      "item": "items:sword_za",
+      "count": 1
+    }]
+  }
+}

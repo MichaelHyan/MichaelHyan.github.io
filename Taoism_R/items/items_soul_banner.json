@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "items:soul_banner",
+      "category": "Nature"
+    },
+
+    "components": {
+      "minecraft:icon": "soul_banner",
+      "minecraft:render_offsets": "soul_banner"
+    }
+  }
+}

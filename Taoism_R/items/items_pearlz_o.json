@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "items:pearlz_o",
+      "category": "Nature"
+    },
+
+    "components": {
+      "minecraft:icon": "pearlz_o",
+      "minecraft:render_offsets": "pearlz_o"
+    }
+  }
+}

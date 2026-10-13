@@ -1,0 +1,581 @@
+{
+	"format_version": "1.8.0",
+	"animation_controllers": {
+		"controller.animation.sword":{
+			"states":{
+				"base_jeta":{
+					"transitions":[
+						{"sword_t_a":"query.get_equipped_item_name=='sword_t' && !variable.attack_time && query.player_level > 14"},
+						{"sword_t_b":"query.get_equipped_item_name=='sword_t' && variable.attack_time && query.player_level > 14 && query.scoreboard('swordatkcd') >= 0"},
+						{"sword_b_a":"query.get_equipped_item_name=='sword_b' && !variable.attack_time && query.player_level > 14"},
+						{"sword_b_b":"query.get_equipped_item_name=='sword_b' && variable.attack_time && query.player_level > 14 && query.scoreboard('swordatkcd') >= 0"},
+						{"sword_q_a":"query.get_equipped_item_name=='sword_q' && !variable.attack_time && query.player_level > 24"},
+						{"sword_q_b":"query.get_equipped_item_name=='sword_q' && variable.attack_time && query.player_level > 24 && query.scoreboard('swordatkcd') >= 0"},
+						{"sword_l_a":"query.get_equipped_item_name=='sword_l' && !variable.attack_time && query.player_level > 24"},
+						{"sword_l_b":"query.get_equipped_item_name=='sword_l' && variable.attack_time && query.player_level > 24 && query.scoreboard('swordatkcd') >= 0"},
+						{"sword_s_a":"query.get_equipped_item_name=='sword_s' && !variable.attack_time && !query.is_jumping && !query.is_sneaking && query.player_level > 49"},
+						{"sword_s_b":"query.get_equipped_item_name=='sword_s' && variable.attack_time && !query.is_jumping && !query.is_sneaking && query.player_level > 49 && query.scoreboard('swordatkcd') >= 0"},
+						{"sword_s_c":"query.get_equipped_item_name=='sword_s' && !variable.attack_time && query.is_jumping && !query.is_sneaking && query.player_level > 49"},
+						{"sword_s_d":"query.get_equipped_item_name=='sword_s' && query.is_sneaking && query.player_level > 49 && query.scoreboard('charge') >= 0"},
+						{"sword_e_a":"query.get_equipped_item_name=='sword_e' && !variable.attack_time && query.player_level > 14"},
+						{"sword_e_b":"query.get_equipped_item_name=='sword_e' && variable.attack_time && query.player_level > 14 && query.scoreboard('swordatkcd') >= 0"},
+						{"sword_w_a":"query.get_equipped_item_name=='sword_w' && !variable.attack_time && query.player_level > 14"},
+						{"sword_w_b":"query.get_equipped_item_name=='sword_w' && variable.attack_time && query.player_level > 14 && query.scoreboard('swordatkcd') >= 0"},
+						{"sword_u_a":"query.get_equipped_item_name=='sword_u' && !variable.attack_time && !query.is_sneaking && !query.is_jumping && query.player_level > 49"},
+						{"sword_u_b":"query.get_equipped_item_name=='sword_u' && variable.attack_time && !query.is_jumping && !query.is_sneaking && query.player_level > 49 && query.scoreboard('swordatkcd') >= 0"},
+						{"sword_u_c":"query.get_equipped_item_name=='sword_u' && variable.attack_time && query.is_sneaking && query.player_level > 49"},
+						{"sword_u_d":"query.get_equipped_item_name=='sword_u' && !variable.attack_time && query.is_jumping && query.player_level > 49"},
+						{"sword_u_e":"query.get_equipped_item_name=='sword_u' && variable.attack_time && query.is_jumping && query.player_level > 49"},
+						{"sword_sp_a":"query.get_equipped_item_name=='sword_sp' && !variable.attack_time && query.player_level > 24"},
+						{"sword_sp_b":"query.get_equipped_item_name=='sword_sp' && variable.attack_time && query.player_level > 24 && query.scoreboard('swordatkcd') >= 0"},
+						{"sword_za_a":"query.get_equipped_item_name=='sword_za' && math.mod(query.life_time,3) == 0 && query.player_level > 29"},
+						{"sword_za_b":"query.get_equipped_item_name=='sword_za' && query.is_sneaking && variable.attack_time && query.player_level > 29"},
+						{"sword_za_c":"query.get_equipped_item_name=='sword_za' && query.is_jumping && variable.attack_time && query.scoreboard('charge') >= 0 && query.player_level > 29"},
+						{"sword_za_d":"query.get_equipped_item_name=='sword_za' && query.player_level > 29"},
+						{"sword_zb_a":"query.get_equipped_item_name=='sword_zb' && query.is_sneaking && query.scoreboard('charge') < 10 && query.scoreboard('charge') >= 0 && query.player_level > 29"},
+						{"sword_zb_b":"query.get_equipped_item_name=='sword_zb' && !query.is_sneaking && query.scoreboard('charge') == 10 && query.player_level > 29"},
+						{"sword_zb_c":"query.get_equipped_item_name=='sword_zb' && !query.is_sneaking && query.scoreboard('charge') < 10 && query.scoreboard('charge') > 0 && query.player_level > 29"},
+						{"sword_zb_d":"query.get_equipped_item_name=='sword_zb' && query.is_jumping && variable.attack_time && query.scoreboard('chargez') >= 0 && query.player_level > 29"},
+						{"sword_zb_e":"query.get_equipped_item_name=='sword_zb' && !query.is_jumping && variable.attack_time && query.player_level > 29"},
+						{"sword_zb_f":"query.get_equipped_item_name=='sword_zb' && !variable.attack_time && query.scoreboard('chargez') < 0 && query.player_level > 29"},
+						{"sword_zb_g":"query.get_equipped_item_name=='sword_zb' && !variable.attack_time && query.scoreboard('chargez') >= 0 && query.player_level > 29"},
+						{"sword_m_a":"query.get_equipped_item_name=='sword_m' && variable.attack_time && query.is_sneaking && query.player_level > 29"},
+						{"sword_m_b":"query.get_equipped_item_name=='sword_m' && variable.attack_time && !query.is_sneaking && query.player_level > 29"},
+						{"whisk":"query.get_equipped_item_name=='whisk' && variable.attack_time && query.player_level > 19"},
+						{"sword_c_a":"query.get_equipped_item_name=='sword_c' && variable.attack_time && query.player_level > 24"},
+						{"sword_c_b":"query.get_equipped_item_name=='sword_c' && query.is_sneaking && query.scoreboard('sword_c_level') > 24 && query.player_level > 24"},
+						{"sword_c_c":"query.get_equipped_item_name=='sword_c' && !variable.attack_time && query.scoreboard('sword_c_level') > 0 && query.player_level > 24"},
+						{"sword_d_a":"query.get_equipped_item_name=='sword_d' && variable.attack_time && query.scoreboard('swordatkcd') >= 0 && query.player_level > 24"},
+						{"sword_d_b":"query.get_equipped_item_name=='sword_d' && query.is_sneaking && query.scoreboard('charge') >= 0 && query.player_level > 24"}
+					]
+				},
+				"sword_t_a": {
+					"transitions": [
+						{
+							"base_jeta": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/effect @s regeneration 1 3 true"
+					]
+				},
+				"sword_t_b": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/particle minecraft:critical_hit_emitter ^ ^2.8 ^2.5",
+						"/playsound sw",
+						"/scoreboard players set @s swordatkcd -3"
+					]
+				},
+				"sword_b_a": {
+					"transitions": [
+						{
+							"base_jeta": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/effect @s resistance 1 3 true"
+					]
+				},
+				"sword_b_b": {
+					"transitions": [
+						{
+							"base_jeta": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/particle minecraft:critical_hit_emitter ^ ^2.8 ^2.5",
+						"/playsound sw",
+						"/scoreboard players set @s swordatkcd -3"
+					]
+				},
+				"sword_q_a": {
+					"transitions": [
+						{
+							"base_jeta": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/effect @s speed 1 1 true",
+						"/effect @s regeneration 1 3 true"
+					]
+				},
+				"sword_q_b": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/particle minecraft:critical_hit_emitter ^ ^2.8 ^2.5",
+						"/playsound sw",
+						"/scoreboard players set @s swordatkcd -3"
+					]
+				},
+				"sword_l_a": {
+					"transitions": [
+						{
+							"base_jeta": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/effect @s speed 1 1 true",
+						"/effect @s resistance 1 3 true"
+					]
+				},
+				"sword_l_b": {
+					"transitions": [
+						{
+							"base_jeta": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/particle minecraft:critical_hit_emitter ^ ^2.8 ^2.5",
+						"/playsound sw",
+						"/scoreboard players set @s swordatkcd -3"
+					]
+				},
+				"sword_s_a": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/effect @s resistance 1 255 true",
+						"/effect @s regeneration 3 3 true",
+						"/effect @s strength 3 255 true",
+						"/effect @s speed 1 5 true",
+						"/effect @s slow_falling 1 1 true"
+					]
+				},
+				"sword_s_b": {
+					"transitions": [
+						{
+							"base_jeta": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/particle minecraft:critical_hit_emitter ^ ^2.8 ^2.5",
+						"/playsound sw",
+						"/scoreboard players set @s swordatkcd -3"
+					]
+				},
+				"sword_s_c": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/effect @s levitation 1 1 true",
+						"/effect @s speed 1 5 true"
+					]
+				},
+				"sword_s_d": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/effect @s fire_resistance 60 1 true",
+						"/scoreboard objectives add charge dummy",
+						"/scoreboard players set @s charge -50",
+						"/tag @e[family=monster,r=20] add sbt",
+						"/tag @e[family=taoism_monster,r=20] add sbtx",
+						"/summon entity:sword_sa ~ ~ ~5",
+						"/summon entity:sword_sa ~2 ~ ~4",
+						"/summon entity:sword_sa ~4 ~ ~2",
+						"/summon entity:sword_sa ~5 ~ ~",
+						"/summon entity:sword_sa ~4 ~ ~-2",
+						"/summon entity:sword_sa ~2 ~ ~-4",
+						"/summon entity:sword_sa ~ ~ ~-5",
+						"/summon entity:sword_sa ~-2 ~ ~-4",
+						"/summon entity:sword_sa ~-4 ~ ~-2",
+						"/summon entity:sword_sa ~-5 ~ ~",
+						"/summon entity:sword_sa ~-4 ~ ~2",
+						"/summon entity:sword_sa ~-2 ~ ~4"
+					]
+				},
+				"sword_e_a": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/effect @s speed 1 1 true",
+						"/effect @s jump_boost 1 1 true",
+						"/effect @s hunger 1 5 true"
+					]
+				},
+				"sword_e_b": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/particle minecraft:critical_hit_emitter ^ ^2.8 ^2.5",
+						"/playsound sw",
+						"/scoreboard players set @s swordatkcd -3"
+					]
+				},
+				"sword_w_a": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/effect @s speed 1 1 true",
+						"/effect @s jump_boost 1 1 true"
+					]
+				},
+				"sword_w_b": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/particle minecraft:critical_hit_emitter ^ ^2.8 ^2.5",
+						"/summon lightning_bolt",
+						"/playsound sw",
+						"/scoreboard players set @s swordatkcd -3"
+					]
+				},
+				"sword_u_a": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/tp @e[type=entity:sword_ua] ^-0.5 ^0.5 ^-1 facing ^-0.5 ^ ^",
+						"/effect @s slow_falling 1 1 true"
+					]
+				},
+				"sword_u_b": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/tag @n[family=monster,r=20] add sbt",
+						"/particle minecraft:critical_hit_emitter ^ ^2.8 ^2.5",
+						"/playsound sw",
+						"/scoreboard players set @s swordatkcd -3"
+					]
+				},
+				"sword_u_c": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/kill @e[type=entity:sword_ua]",
+						"/tag @e[family=monster,r=20] add sbt",
+						"/summon entity:sword_ua"
+					]
+				},
+				"sword_u_d": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/effect @s levitation 1 1 true"
+					]
+				},
+				"sword_u_e": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/tp @n[type=entity:sword_ua]",
+						"/summon lightning_bolt",
+						"/kill @e[tag=sbt,r=3]"
+					]
+				},
+				"sword_sp_a": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/effect @s resistance 1 3 true",
+						"/effect @s regeneration 1 5 true",
+						"/effect @s hunger 1 5 true",
+						"/effect @s speed 1 1 true"
+					]
+				},
+				"sword_sp_b": {
+					"transitions": [
+						{
+							"base_jeta": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/particle minecraft:critical_hit_emitter ^ ^2.8 ^2.5",
+						"/effect @s wither 2 255 true",
+						"/scoreboard players set @s swordatkcd -3"
+					]
+				},
+				"sword_za_a": {
+					"transitions": [
+						{
+							"base_jeta": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/fill ~-1 ~-1 ~-1 ~1 ~1 ~1 fire replace air",
+						"/effect @s fire_resistance 20 1 true",
+						"/weather clear",
+						"/effect @s resistance 20 2 true",
+						"/effect @s hunger 20 1 true",
+						"/enchant @s fire_aspect 2",
+						"/damage @e[family=monster,r=2] 5"
+					]
+				},
+				"sword_za_b": {
+					"transitions": [
+						{
+							"base_jeta": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/fill ^ ^1 ^0 ^ ^2 ^1 fire",
+						"/fill ^ ^1 ^1 ^ ^2 ^2 fire",
+						"/fill ^ ^1 ^2 ^ ^2 ^3 fire",
+						"/fill ^ ^1 ^3 ^ ^2 ^4 fire",
+						"/fill ^ ^1 ^4 ^ ^2 ^5 fire",
+						"/fill ^ ^1 ^5 ^ ^2 ^6 fire",
+						"/fill ^ ^1 ^6 ^ ^2 ^7 fire",
+						"/fill ^ ^1 ^7 ^ ^2 ^8 fire",
+						"/fill ^ ^1 ^8 ^ ^2 ^9 fire",
+						"/fill ^ ^1 ^9 ^ ^2 ^10 fire"
+					]
+				},
+				"sword_za_c": {
+					"transitions": [
+						{
+							"base_jeta": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/summon entity:bell_hp_a",
+						"/summon entity:bell_hp_b",
+						"/scoreboard players add @s charge -100"
+					]
+				},
+				"sword_za_d": {
+					"transitions": [
+						{
+							"base_jeta": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/fill ~-2 ~-2 ~-2 ~2 ~2 ~2 air replace water",
+						"/fill ~-1 ~-1 ~-1 ~1 ~1 ~1 dirt replace grass_block",
+						"/effect @s fire_resistance 20 1 true"
+					]
+				},
+				"sword_zb_a": {
+					"transitions": [
+						{
+							"base_jeta": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/scoreboard objectives add charge dummy",
+						"/scoreboard players add @s charge 1",
+						"/particle minecraft:cauldron_explosion_emitter ~ ~ ~"
+					]
+				},
+				"sword_zb_b": {
+					"transitions": [
+						{
+							"base_jeta": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s charge -300",
+						"/particle minecraft:totem_particle ~ ~1 ~",
+						"/weather thunder",
+						"/effect @e[family=!monster,r=5] regeneration 10 5 true" 
+					]
+				},
+				"sword_zb_c": {
+					"transitions": [
+						{
+							"base_jeta": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s charge 0"
+					]
+				},
+				"sword_zb_d": {
+					"transitions": [
+						{
+							"base_jeta": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/tag @e[family=monster,r=20] add sbt",
+						"/summon entity:sword_sa ~ ~ ~",
+						"/scoreboard players set @s chargez -50"
+					]
+				},
+				"sword_zb_e": {
+					"transitions": [
+						{
+							"base_jeta": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/enchant @s sharpness 5",
+						"/fill ~-2 ~-2 ~-2 ~2 ~2 ~2 obsidian replace lava"
+					]
+				},
+				"sword_zb_f": {
+					"transitions": [
+						{
+							"base_jeta": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players add @s chargez 1",
+						"/effect @s health_boost 10 9 true",
+						"/effect @s fire_resistance 10 1 true",
+						"/effect @s water_breathing 10 1 true",
+						"/effect @s resistance 10 2 true",
+						"/fill ~-2 ~-2 ~-2 ~2 ~2 ~2 obsidian replace lava"
+					]
+				},
+				"sword_zb_g": {
+					"transitions": [
+						{
+							"base_jeta": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/scoreboard objectives add chargez dummy",
+						"/effect @s health_boost 10 9 true",
+						"/effect @s fire_resistance 10 1 true",
+						"/effect @s water_breathing 10 1 true",
+						"/effect @s resistance 10 2 true",
+						"/fill ~-2 ~-2 ~-2 ~2 ~2 ~2 obsidian replace lava"
+					]
+				},
+				"sword_m_a": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/replaceitem entity @s slot.weapon.mainhand 0 air",
+						"/tag @e[family=monster,r=20] add qlock",
+						"/summon entity:sword_m"
+					]
+				},
+				"sword_m_b": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/enchant @s smite 5"
+					]
+				},
+				"whisk": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/effect @s clear",
+						"/effect @s strength 1 2 true"
+					]
+				},
+				"sword_c_a": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/scoreboard objectives add sword_c_level dummy",
+						"/enchant @s mending",
+						"/scoreboard players add @s sword_c_level 2"
+					]
+				},
+				"sword_c_b": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/scoreboard objectives add sword_c_level dummy",
+						"/scoreboard players add @s sword_c_level -24",
+						"/damage @e[family=monster,r=5] 10",
+						"/damage @s 2",
+						"/particle minecraft:smash_ground_particle ~~~"
+					]
+				},
+				"sword_c_c": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/scoreboard players add @s sword_c_level -1"
+					]
+				},
+				"sword_d_a": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/particle minecraft:critical_hit_emitter ^ ^2.8 ^2.5",
+						"/damage @e[tag=target] 7",
+						"/tag @e[tag=target] remove target",
+						"/scoreboard players set @s swordatkcd -3",
+						"/enchant @s sharpness 5"
+					]
+				},
+				"sword_d_b": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/particle minecraft:totem_particle ~ ~1 ~",
+						"/summon entity:sword_d_target",
+						"/scoreboard players set @s charge -4"
+					]
+				}
+			}
+		}
+ 	}
+ }

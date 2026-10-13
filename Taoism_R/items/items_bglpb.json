@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "items:bglpb",
+      "category": "Nature"
+    },
+
+    "components": {
+      "minecraft:icon": "bglpb",
+      "minecraft:render_offsets": "bglpb"
+    }
+  }
+}

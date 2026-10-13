@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "items:brush_p",
+      "category": "Nature"
+    },
+
+    "components": {
+      "minecraft:icon": "brush_p",
+      "minecraft:render_offsets": "brush_p"
+    }
+  }
+}

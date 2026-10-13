@@ -1,0 +1,43 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "items:tbf"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      " a ",
+      "d c",
+      " b "
+    ],
+    "key": {
+      "a": {
+        "item": "items:tb"
+      },
+      "b": {
+        "item": "items:uf"
+      },
+      "c": {
+        "item": "items:fish_gelatin"
+      },
+      "d": {
+        "item": "items:brush_p"
+      }
+    },
+    "unlock": [
+      {
+        "item": "items:talisman"
+      }
+    ],
+    "result": [{
+      "item": "items:tbf",
+      "count": 1
+    },
+    {
+      "item": "items:brush_n",
+      "count": 1
+    }]
+  }
+}

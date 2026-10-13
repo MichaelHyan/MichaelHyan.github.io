@@ -1,0 +1,60 @@
+{
+	"format_version": "1.8.0",
+	"animation_controllers": {
+		"controller.animation.ranged":{
+			"states":{
+				"base_jeta":{
+					"transitions":[
+						{"bow":"query.get_equipped_item_name=='bow' && query.is_sneaking"},
+						{"bow_rec":"query.get_equipped_item_name=='bow' && query.vertical_speed > -10 && variable.attack_time "},
+						{"bow_btime":"query.get_equipped_item_name=='bow' && query.vertical_speed <= -10 && variable.attack_time"},
+						{"crossbow":"query.get_equipped_item_name=='crossbow' && query.is_sneaking"}
+					]
+				},
+				"bow": {
+					"transitions": [
+						{
+							"base_jeta": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/effect @s slowness 1 5 true"
+					]
+				},
+				"bow_rec": {
+					"transitions": [
+						{
+							"base_jeta": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/tp @e[type=arrow] ^ ^ ^1"
+					]
+				},
+				"bow_btime": {
+					"transitions": [
+						{
+							"base_jeta": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/effect @s levitation 1 1 true",
+						"/effect @s slow_falling 3 255 true",
+						"/effect @e[type=!player,r=50] slowness 3 10 true"
+					]
+				},
+				"crossbow": {
+					"transitions": [
+						{
+							"base_jeta": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/effect @s slowness 1 20 true",
+						"/effect @s resistance 1 5 true"
+					]
+				}
+			}
+		}
+ 	}
+ }

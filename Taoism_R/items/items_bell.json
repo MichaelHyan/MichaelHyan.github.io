@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "items:bell_s",
+      "category": "Nature"
+    },
+
+    "components": {
+      "minecraft:icon": "bell",
+      "minecraft:render_offsets": "bell"
+    }
+  }
+}
